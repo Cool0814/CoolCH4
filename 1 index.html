@@ -1,0 +1,395 @@
+<!DOCTYPE html><html lang="zh-TW"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-id="th-modified">極致安全 甲烷偵測器</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased scroll-smooth">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-blue-600 text-2xl"></i>
+                <span class="font-bold text-lg text-slate-900 tracking-wider">產品研究成果</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+                <a href="#features" class="hover:text-blue-600 transition">產品特色</a>
+                <a href="#showcase" class="hover:text-blue-600 transition">產品成果</a>
+                <a href="#components" class="hover:text-blue-600 transition">系統元件</a>
+                <a href="#video" class="hover:text-blue-600 transition">成果影片</a>
+                <a href="#specs" class="hover:text-blue-600 transition">核心規格</a>
+            </div>
+            <div>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=s1451049@gm.ncue.edu.tw&amp;su=【產品成果洽詢】關於 Arduino 甲烷偵測器原型機採購與合作" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm px-4 py-2 rounded-md font-bold transition">
+                    立即詢價
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-900 text-white py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.1),transparent_50%)]"></div>
+        <div class="max-w-5xl mx-auto text-center space-y-8 relative z-10">
+            <span class="inline-flex items-center gap-1.5 bg-blue-500/10 border border-blue-400/30 text-blue-400 text-sm font-semibold px-3 py-1 rounded-full">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                產品成果・在地實作研發
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight bg-gradient-to-r from-white via-slate-100 to-blue-200 bg-clip-text text-transparent">
+                極致安全 甲烷偵測器<br>            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
+                專為中小型環境與學術研究設計。搭載高精密傳感器，提供全天候即時監測、智能聲光警報與極速反應，讓看不見的危機無所遁形。
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=s1451049@gm.ncue.edu.tw&amp;su=【專題成果洽詢】關於 Arduino 甲烷偵測器原型機採購與合作" target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-500/20 transition-all transform hover:-translate-y-0.5">
+                    聯繫團隊索取報價
+                </a>
+                <a href="#components" class="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-slate-200 px-8 py-4 rounded-xl font-medium text-lg transition-all">
+                    <i class="fa-solid fa-microchip mr-2 text-blue-400"></i>檢視核心硬體元件
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-white border-b border-slate-200 py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-1">
+                <div class="text-3xl md:text-4xl font-extrabold text-blue-600">&lt; 0.5s</div>
+                <div class="text-sm font-medium text-slate-500">氣體洩漏反應</div>
+            </div>
+            <div class="space-y-1">
+                <div class="text-3xl md:text-4xl font-extrabold text-blue-600">24hr</div>
+                <div class="text-sm font-medium text-slate-500">主動監測與警報</div>
+            </div>
+            <div class="space-y-1">
+                <div class="text-3xl md:text-4xl font-bold text-blue-600 text-base md:text-lg lg:text-xl">國立彰化師範大學</div>
+                <div class="text-sm font-medium text-slate-500">機電工程學系 在地研發</div>
+            </div>
+            <div class="space-y-1">
+                <div class="text-3xl md:text-4xl font-extrabold text-blue-600">創客級</div>
+                <div class="text-sm font-medium text-slate-500">高性價比 市售 1/3 成本</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                三大核心優勢，打造堅實防線
+            </h2>
+            <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-gauge-high"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">高靈敏精準偵測</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    採用先進氣體傳感元件 (MQ-4)，能敏銳捕捉空氣中微量的甲烷濃度變化，在達到危險值前提前預警，防患於未然。
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">即時雙重聲光警報</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    當氣體濃度超標，蜂鳴器與高亮度 LED 燈立即同步運作 (雙重警報)，確保現場人員在各類環境下都能第一時間應變。
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">高擴充性開源架構</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    基於相容 Arduino 友好的硬體平台 (Nano) 開發，保留豐富腳位，方便未來升級 Wi-Fi 聯網、雲端推播或整合系統。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="py-20 bg-slate-100 border-t border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                    產品成果展示
+                </h2>
+                <p class="text-slate-500 max-w-xl mx-auto leading-relaxed">
+                    基於Arduino之微型甲烷偵測器：從原型到應用<br>
+                    國立彰化師範大學 工業教育與技術學系
+                </p>
+                <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full mt-2"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col gap-4 transition hover:shadow-md hover:-translate-y-0.5">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold border border-blue-100">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="text-slate-500 font-medium text-xs tracking-wide">項目名稱</h4>
+                        <p class="text-2xl font-black text-slate-950 tracking-tight">甲烷偵測器</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col gap-4 transition hover:shadow-md hover:-translate-y-0.5">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold border border-blue-100">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="text-slate-500 font-medium text-xs tracking-wide">核心技術</h4>
+                        <p class="text-base font-semibold text-slate-900 leading-snug">Arduino Nano, MQ-4 傳感器, 蜂鳴器警報</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col gap-4 transition hover:shadow-md hover:-translate-y-0.5">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold border border-blue-100">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="text-slate-500 font-medium text-xs tracking-wide">應用場景</h4>
+                        <p class="text-base font-semibold text-slate-900 leading-snug">實驗室、家庭、微型工廠</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col gap-4 transition hover:shadow-md hover:-translate-y-0.5">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold border border-blue-100">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="text-slate-500 font-medium text-xs tracking-wide">功能特點</h4>
+                        <p class="text-base font-semibold text-slate-900 leading-snug">0.5s反應、雙重聲光警報、高擴充性</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="components" class="py-20 bg-white space-y-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                    系統核心硬體元件
+                </h2>
+                <p class="text-slate-500 max-w-xl mx-auto leading-relaxed">
+                    精選高穩定性模組，軟硬體完美協調，打造即時、精準的防護閉環
+                </p>
+                <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="bg-slate-100 aspect-square w-full flex items-center justify-center overflow-hidden p-4">
+                        <img src="https://cdn.phototourl.com/free/2026-06-01-7f804980-0fd4-4cd3-8b04-62394df001ec.webp" alt="Arduino板" class="max-w-full max-h-full object-contain object-center rounded-lg">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-blue-600 uppercase bg-blue-50 px-2.5 py-1 rounded-full">圖 1 ・ 系統核心</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">Arduino板</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">作為整套偵測系統的主控運作核心，負責精準、即時地接收、解析並處理所有控制訊號。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="bg-slate-100 aspect-square w-full flex items-center justify-center overflow-hidden p-4">
+                        <img src="https://cdn.discordapp.com/attachments/1414191359832752130/1511011598750449684/width550.png?ex=6a1ee6b6&amp;is=6a1d9536&amp;hm=6930459cd4f559792577e42468528dba4a1aaca933cfb8b29ad4d2d79b372181&amp;" alt="蜂鳴器" class="max-w-full max-h-full object-contain object-center rounded-lg">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-green-600 uppercase bg-green-50 px-2.5 py-1 rounded-full">圖 2 ・ 聲音警報</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">蜂鳴器</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">主動式防禦機制。當環境中的氣體濃度超標時，將第一時間發出高分貝的主動聲音警報。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="bg-slate-100 aspect-square w-full flex items-center justify-center overflow-hidden p-4">
+                        <img src="https://cdn.discordapp.com/attachments/1414191359832752130/1511011906436075681/width550.png?ex=6a1ee6ff&amp;is=6a1d957f&amp;hm=f6780475461c62ae02ad03fe0cfdd3be42f7f2645491aeb46274608cb297ecf1&amp;" alt="MQ-4甲烷感測器" class="max-w-full max-h-full object-contain object-center rounded-lg">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-purple-600 uppercase bg-purple-50 px-2.5 py-1 rounded-full">圖 3 ・ 即時感測</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">MQ-4甲烷感測器</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">高敏銳感知前端。能 24 小時不間斷即時偵測、捕捉周遭環境中的甲烷氣體濃度變化。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="bg-slate-100 aspect-square w-full flex items-center justify-center overflow-hidden p-4">
+                        <img src="https://cdn.discordapp.com/attachments/1414191359832752130/1511011950329462814/width412.png?ex=6a1ee70a&amp;is=6a1d958a&amp;hm=625bf91e75fe7f904ed195c128df2a9935544818c38e3baf30da104a90cc437f&amp;" alt="LCD顯示螢幕" class="max-w-full max-h-full object-contain object-center rounded-lg">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-amber-600 uppercase bg-amber-50 px-2.5 py-1 rounded-full">圖 4 ・ 數值可視化</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">LCD顯示螢幕</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">直觀的數據可視化介面。即時、明亮地將當前環境中的氣體濃度精確數值呈現給現場人員。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 pt-16 border-t border-slate-100">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                    補充硬體元件
+                </h2>
+                <p class="text-slate-500 max-w-xl mx-auto leading-relaxed">
+                    擴充與輔助應用的外圍配件，提供更全面、更多元的功能集成支援
+                </p>
+                <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="bg-slate-100 aspect-square w-full flex items-center justify-center overflow-hidden p-4">
+                        <img src="https://cdn.discordapp.com/attachments/1414191359832752130/1511012030524690492/width412.png?ex=6a1ee71d&amp;is=6a1d959d&amp;hm=96a01b437943ddcf31c1cbad92bf0854c645e3fc051703aa8aef46542995af12&amp;" alt="Arduino原型擴展板" class="max-w-full max-h-full object-contain object-center rounded-lg">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-slate-600 uppercase bg-slate-100 px-2.5 py-1 rounded-full">圖 5 ・ 介面擴充</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">Arduino原型擴展板</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">延伸開發板接腳，穩固接線，提升硬體連接的牢固度與便利性。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="bg-slate-100 aspect-square w-full flex items-center justify-center overflow-hidden p-4">
+                        <img src="https://cdn.discordapp.com/attachments/1414191359832752130/1511012071528202382/width412.png?ex=6a1ee727&amp;is=6a1d95a7&amp;hm=571e38dcc3e6a17bbeb2571b6d0b768ba349734b39c0562ec60c3119634e6483&amp;" alt="DHT11溫濕度感測器" class="max-w-full max-h-full object-contain object-center rounded-lg">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-slate-600 uppercase bg-slate-100 px-2.5 py-1 rounded-full">圖 6 ・ 環境監測</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">DHT11溫濕度感測器</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">監測環境中的溫度與濕度，提供更全方位的室內空氣狀態數據反饋。</p>
+                        </div>
+                    </div>
+                </div>
+		
+		<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="bg-slate-100 aspect-square w-full flex items-center justify-center overflow-hidden p-4">
+                        <img src="https://cdn.discordapp.com/attachments/1414191359832752130/1511256681416233113/IMG_9067.jpg?ex=6a1fcaf6&amp;is=6a1e7976&amp;hm=8d59bd1d48b8120d11642d7066bd0926db62d4863232e4faa8b189bf4bf8ba4b&amp;" alt="直流散熱風扇" class="max-w-full max-h-full object-contain object-center rounded-lg">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-slate-600 uppercase bg-slate-100 px-2.5 py-1 rounded-full">圖 7 ・ 空氣流通</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">直流散熱風扇</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">保持硬體處於正常的工作溫度下運作，加速空氣流通，快速排除殘留氣體。</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="py-20 bg-slate-100 border-t border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-8">
+            <div class="space-y-3">
+                <h2 class="text-3xl font-bold text-slate-900">實測成果影片</h2>
+                <p class="text-slate-500">直觀感受偵測器在面對突發甲烷洩漏時的極速反應 (0.5s) 與警報運作</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <video src="實測.mp4" controls="" width="100%" class="rounded-2xl shadow-lg border border-slate-200 bg-black">
+                    您的瀏覽器不支援 HTML5 影片播放。
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="text-center space-y-4">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900">核心技術規格</h2>
+            <p class="text-slate-500">基於產品與實作數據，提供透明的硬體規格</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 font-semibold">
+                        <th class="p-4 sm:p-5">項目</th>
+                        <th class="p-4 sm:p-5">規格明細</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-slate-600">
+                    <tr>
+                        <td class="p-4 sm:p-5 font-medium text-slate-900">核心控制器</td>
+                        <td class="p-4 sm:p-5">相容 Arduino Nano 系統，穩定可靠</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 sm:p-5 font-medium text-slate-900">氣體傳感傳感器</td>
+                        <td class="p-4 sm:p-5">MQ-4 傳感器 (高靈敏精準偵測)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 sm:p-5 font-medium text-slate-900">顯示模組</td>
+                        <td class="p-4 sm:p-5">高對比度 LCD 顯示螢幕 (即時濃度數值可視化)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 sm:p-5 font-medium text-slate-900">偵測氣體種類</td>
+                        <td class="p-4 sm:p-5">甲烷 (CH4)、天然氣、液化石油氣 (LPG)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 sm:p-5 font-medium text-slate-900">反應時間</td>
+                        <td class="p-4 sm:p-5">小於 0.5 秒 (極速反應、功能特點)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 sm:p-5 font-medium text-slate-900">警報機制</td>
+                        <td class="p-4 sm:p-5">高分貝主動式蜂鳴器 + 紅色高亮 LED 閃爍 (雙重聲光警報)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 sm:p-5 font-medium text-slate-900">供電需求</td>
+                        <td class="p-4 sm:p-5">5V DC (支援標準 USB 供電或行動電源)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-3xl mx-auto px-4 space-y-12">
+            <div class="text-center space-y-3">
+                <h2 class="text-3xl font-bold text-slate-900">常見問答</h2>
+                <p class="text-slate-500">解答您在產品合作或採購部署前的疑問</p>
+            </div>
+            <div class="space-y-4">
+                <details class="group border border-slate-200 rounded-xl p-4 bg-white [&amp;_summary::-webkit-details-marker]:hidden" open="">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900">
+                        <span>請問這套方案適合拿來做大專院校的專題研發嗎？</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-slate-400"></i></span>
+                    </summary>
+                    <p class="mt-3 text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
+                        非常適合！我們的系統基於高度友善的開源架構 (Arduino Nano) 開發，程式碼與腳位定義透明。我們不僅提供成品，也能針對學生專題、創客 DIY 提供模組套件與技術諮詢，是高性價比的專題首選。
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-20 text-center border-t border-slate-900/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">正在尋找高性價比的安全監測或專題方案？</h2>
+            <p class="text-blue-100 text-lg max-w-2xl mx-auto leading-relaxed">
+                無論您是需要專題開發的 DIY 創客套件，還是中小型廠區的客製化硬體量產部署，我們基於 Arduino Nano 的在地研發方案都能為您提供最穩定、最實惠的解決方案。
+            </p>
+            <div class="pt-6 flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=s1451049@gm.ncue.edu.tw&amp;su=【專題成果洽詢】關於 Arduino 甲烷偵測器原型機採購與合作" target="_blank" class="bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-xl font-bold shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>聯繫團隊索取報價
+                </a>
+                <a href="tel:0918592302" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-medium shadow-md transition-all duration-200 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i>電話洽詢團隊(僅行動裝置)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-500 text-center py-8 text-sm border-t border-slate-900">
+        <p>© 2026 甲烷安全監測研發團隊. All rights reserved.</p>
+    </footer>
+
+</body></html>
