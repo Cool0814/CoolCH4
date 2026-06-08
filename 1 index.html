@@ -38,7 +38,7 @@
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight bg-gradient-to-r from-white via-slate-100 to-blue-200 bg-clip-text text-transparent">
                 極致安全 甲烷偵測器<br>            </h1>
             <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
-                專為中小型環境與學術研究設計。搭載高精密傳感器，提供全天候即時監測、智能聲光警報與極速反應，讓看不見的危機無所遁形。
+                專為中小型環境與學術研究設計。搭載高精密傳感器，提供全天候即時監測、智能風扇功能與極速反應，讓看不見的危機無所遁形。
             </p>
             <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=s1451049@gm.ncue.edu.tw&amp;su=【專題成果洽詢】關於 Arduino 甲烷偵測器原型機採購與合作" target="_blank" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-500/20 transition-all transform hover:-translate-y-0.5">
@@ -93,9 +93,9 @@
                 <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center text-xl font-bold mb-6">
                     <i class="fa-solid fa-bell"></i>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">即時雙重聲光警報</h3>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">即時雙重保障功能</h3>
                 <p class="text-slate-600 leading-relaxed">
-                    當氣體濃度超標，蜂鳴器與高亮度 LED 燈立即同步運作 (雙重警報)，確保現場人員在各類環境下都能第一時間應變。
+                    當氣體濃度超標，高亮度 LED 燈與風扇立即同步運作 (雙重保障)，確保現場人員在各類環境下都能第一時間應變。
                 </p>
             </div>
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
@@ -140,7 +140,7 @@
                     </div>
                     <div class="space-y-1">
                         <h4 class="text-slate-500 font-medium text-xs tracking-wide">核心技術</h4>
-                        <p class="text-base font-semibold text-slate-900 leading-snug">Arduino Nano, MQ-4 傳感器, 蜂鳴器警報</p>
+                        <p class="text-base font-semibold text-slate-900 leading-snug">Arduino Nano, MQ-4 傳感器, 1N4007整流二極體, 2N2222電晶體</p>
                     </div>
                 </div>
 
@@ -160,7 +160,7 @@
                     </div>
                     <div class="space-y-1">
                         <h4 class="text-slate-500 font-medium text-xs tracking-wide">功能特點</h4>
-                        <p class="text-base font-semibold text-slate-900 leading-snug">0.5s反應、雙重聲光警報、高擴充性</p>
+                        <p class="text-base font-semibold text-slate-900 leading-snug">0.5s反應、雙重保障功能、高擴充性</p>
                     </div>
                 </div>
             </div>
@@ -195,13 +195,14 @@
 
                 <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
                     <div class="bg-slate-100 aspect-square w-full flex items-center justify-center overflow-hidden p-4">
-                        <img src="https://cdn.phototourl.com/free/2026-06-06-109f72fb-2edb-4902-b0d5-16427795d36c.png" alt="蜂鳴器" class="max-w-full max-h-full object-contain object-center rounded-lg">
+                        <img src="https://cdn.phototourl.com/free/2026-06-08-4567223a-f319-4dae-9bb2-d29b7149d0f6.png" alt="蜂鳴器" class="max-w-full max-h-full object-contain object-center rounded-lg">
                     </div>
                     <div class="p-6 flex-grow flex flex-col justify-between">
                         <div>
-                            <span class="text-xs font-bold tracking-wider text-green-600 uppercase bg-green-50 px-2.5 py-1 rounded-full">圖 2 ・ 聲音警報</span>
-                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">蜂鳴器</h4>
-                            <p class="text-slate-600 text-sm leading-relaxed">主動式防禦機制。當環境中的氣體濃度超標時，將第一時間發出高分貝的主動聲音警報。</p>
+                            <span class="text-xs font-bold tracking-wider text-green-600 uppercase bg-green-50 px-2.5 py-1 rounded-full">圖 2 ・ 保護與驅動</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-3 mb-2">1N4007整流二極體、2N2222電晶體</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">1N4007整流二極體：防止反向電壓衝擊，保護核心電路。
+2N2222電晶體：作為電子開關，負責驅動高電流元件。</p>
                         </div>
                     </div>
                 </div>
@@ -339,8 +340,8 @@
                         <td class="p-4 sm:p-5">小於 0.5 秒 (極速反應、功能特點)</td>
                     </tr>
                     <tr>
-                        <td class="p-4 sm:p-5 font-medium text-slate-900">警報機制</td>
-                        <td class="p-4 sm:p-5">高分貝主動式蜂鳴器 + 紅色高亮 LED 閃爍 (雙重聲光警報)</td>
+                        <td class="p-4 sm:p-5 font-medium text-slate-900">緊急機制</td>
+                        <td class="p-4 sm:p-5">紅色高亮 LED 閃爍、智能風扇連動</td>
                     </tr>
                     <tr>
                         <td class="p-4 sm:p-5 font-medium text-slate-900">供電需求</td>
